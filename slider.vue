@@ -1,7 +1,8 @@
 <template lang="pug">
-  .slider(@mousedown.stop.left="click")
-    .rod
-    .spot(:style="{left: value * 10 - 10 + 'px'}") {{value}}
+  <div class="slider">
+    <div class="rod"></div>
+    <div class="spot" :style="{left: value * 10 - 10 + 'px'}">{{value}}</div>
+  </div>
 </template>
 
 <script>
